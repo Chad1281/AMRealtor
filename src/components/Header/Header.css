@@ -1,12 +1,19 @@
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    max-width: 100%;
     background-color: #0d74779f;
-    padding: 5px 120px;
+    padding: 10px 0;
+}
+
+header a {
+    width: 50vw;
 }
 
 header a img {
+    display: flex;
+    align-self: flex-start;
     padding: 0 10px;
     height: 50px;
 }
@@ -16,6 +23,7 @@ header nav {
 }
 
 header nav a {
+    width: auto;
     padding: 0 30px;
     font-size: 1.1rem;
     font-weight: 500;
@@ -23,6 +31,3 @@ header nav a {
     text-decoration: none;
 }
 
-header ul a img {
-    height: 25px;
-}

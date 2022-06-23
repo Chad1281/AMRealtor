@@ -1,0 +1,17 @@
+.links {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    z-index: 5;
+}
+
+.links ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 20vh 20px;
+}
+
+ul a img {
+    height: 25px;
+    padding: 10px 0;
+}
