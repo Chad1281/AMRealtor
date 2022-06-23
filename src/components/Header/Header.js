@@ -11,8 +11,8 @@ export default function Header() {
             <a href="/" ><img id="Aaron Mullens Realtor" src={AaronMullens} alt="Aaron Mullens Realtor Logo" /></a>
             <nav>
                 <a href="/">Home</a>
-                <a href="/buying">Buying</a>
-                <a href="/selling">Selling</a>
+                <a href="/search">Property Search</a>
+                <a href="/sell">Sell</a>
                 <a href="/about">About</a>
                 <a href="/blog">Blog</a>
             </nav>
