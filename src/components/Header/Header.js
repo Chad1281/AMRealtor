@@ -1,6 +1,6 @@
 import React from 'react';
 
-import AaronMullens from '../../assets/images/logos/AMHeaderLogo.png';
+import AaronMullens from '../../assets/images/logos/AMHeaderLogo1.png';
 
 import './Header.css';
 

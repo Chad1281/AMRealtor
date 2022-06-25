@@ -2,9 +2,12 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    max-width: 100%;
-    background-color: #0d74779f;
-    padding: 10px 0;
+    width: 100%;
+    background-image: linear-gradient(#212121, #3232328c);
+    padding: 5px 0;
+    position: fixed;
+    top: 0;
+    z-index: 3;
 }
 
 header a {
@@ -15,15 +18,15 @@ header a img {
     display: flex;
     align-self: flex-start;
     padding: 0 10px;
-    height: 50px;
+    height: 60px;
 }
 
 header nav a {
     width: auto;
     padding: 0 30px;
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: #212121;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #fafafa;
     text-decoration: none;
 }
 

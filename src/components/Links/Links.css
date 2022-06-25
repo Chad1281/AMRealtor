@@ -1,17 +1,18 @@
 .links {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    height: 60vh;
+    height: 75vh;
+    position: fixed;
+    right: 0;
     z-index: 5;
 }
 
 .links ul {
     display: flex;
     flex-direction: column;
-    margin: 0 20px;
+    margin: 0 40px;
     padding: 0 10px;
-    background-color: #0d74779f;
+    background-image: linear-gradient(to right, #0D7377, #14FFEC, #0D7377);
     border-radius: 10px;
     box-shadow: 5px 10px 15px #00000049, 5px 10px 15px #0000003a;
 }
