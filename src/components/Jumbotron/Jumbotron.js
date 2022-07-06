@@ -13,12 +13,15 @@ export default function Jumbotron() {
 
     return(
         <div className='jumbotron'>
-            <img id="mySlides" src={Houses} alt='Row of two story townhouses' />
-            <img id="mySlides" src={Sold} alt='Aaron holding sold sign with buyers' />
-            <img id="mySlides" src={Fireplace} alt='Living room with a fireplace' />
-            <img id="mySlides" src={Groove} alt='Aaron holding sign that says The Groove Realty with buyers' />
-            <img id="mySlides" src={Living} alt='Living room with stairs and kitchen in background' />
-            <img id="mySlides" src={House} alt='Front of a two story house' />
+            {/* <div> */}
+                {/* <img id="mySlides" src={Houses} alt='Row of two story townhouses' /> */}
+                <img id="mySlides" src={Sold} alt='Aaron holding sold sign with buyers' />
+                <img id="mySlides" src={Fireplace} alt='Living room with a fireplace' />
+                <img id="mySlides" src={Groove} alt='Aaron holding sign that says The Groove Realty with buyers' />
+                <img id="mySlides" src={Living} alt='Living room with stairs and kitchen in background' />
+                <img id="mySlides" src={House} alt='Front of a two story house' />
+            {/* </div> */}
+            
         </div>
     )
 }

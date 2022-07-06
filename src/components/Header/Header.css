@@ -1,32 +1,52 @@
 header {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 100%;
-    background-image: linear-gradient(#212121, #3232328c);
-    padding: 5px 0;
-    position: fixed;
+    background: #FFF5EA;
+    box-shadow: 5px 10px 15px #00000049, 5px 10px 15px #0000003a;
+    /* box-shadow: 15px 30px 40px #00000049, 15px 30px 40px #0000003a; */
+    padding: 25px 0 0 0;
+    position: sticky;
     top: 0;
     z-index: 3;
 }
 
 header a {
-    width: 50vw;
+    display: flex;
+    /* width: 50vw; */
+    text-decoration: none;
+}
+
+header a span {
+    text-align: center;
+    color: #323232;
+    font-size: 2.4rem;
+    font-family: cursive;
 }
 
 header a img {
-    display: flex;
-    align-self: flex-start;
+    margin: 5px 0;
     padding: 0 10px;
-    height: 60px;
+    height: 50px;
+}
+
+header nav {
+    display: inherit;
+    margin-bottom: 10px;
+    position: absolute;
+    right: 20px;
+    top: 5px;
 }
 
 header nav a {
     width: auto;
-    padding: 0 30px;
-    font-size: 1.2rem;
-    font-weight: 400;
-    color: #fafafa;
+    padding: 0 12px;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: cursive;
+    color: #323232;
     text-decoration: none;
 }
 

@@ -1,0 +1,7 @@
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, #323232, #1B75BA, #00FFFF, #1b75ba);
+    z-index: -1;
+}
