@@ -4,18 +4,30 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    /* height: 100vh; */
-    /* background-image: linear-gradient(#212121, #50d4f8); */
     background-color: inherit;
 }
 
-/* .jumbotron div {
-    width: 100%;
-    border-radius: 20px;
-    box-shadow: 15px 30px 40px #00000049, 15px 30px 40px #0000003a;
-} */
+.jumbotron div {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    background: #f2f2f2;
+    margin: 50px;
+    padding: 0;
+    box-shadow: 5px 10px 15px #00000052, 5px 10px 15px #0000003a;
+    border-radius: 5px;
+}
+
+.jumbotron div p {
+    background: #f2f2f2;
+    width: 20%;
+    height: 100%;
+}
 
 .jumbotron img {
-    margin: 50px;
-    box-shadow: 5px 10px 15px #00000049, 5px 10px 15px #0000003a;
+    /* margin: 50px; */
+    width: 80%;
+    border-left: 2px solid black;
+    border-radius: 0 5px 5px 0;
+    z-index: 1;
 }

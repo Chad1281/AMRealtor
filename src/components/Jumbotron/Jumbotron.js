@@ -11,16 +11,27 @@ import './Jumbotron.css'
 
 export default function Jumbotron() {
 
+    const images = [Sold, Fireplace, Houses, Groove, Living, House];
+    const imgAlts = [
+        'Aaron holding sold sign with buyers',
+        'Living room with a fireplace',
+        'Row of two story townhouses',
+        'Aaron holding sign that says The Groove Realty with buyers',
+        'Living room with a fireplace',
+        'Front of a two story house'
+    ]
+
+    var i = 0;
+
+    const jumboImg = images[i];
+    const jumboImgAlt = imgAlts[i];
+
     return(
         <div className='jumbotron'>
-            {/* <div> */}
-                {/* <img id="mySlides" src={Houses} alt='Row of two story townhouses' /> */}
-                <img id="mySlides" src={Sold} alt='Aaron holding sold sign with buyers' />
-                <img id="mySlides" src={Fireplace} alt='Living room with a fireplace' />
-                <img id="mySlides" src={Groove} alt='Aaron holding sign that says The Groove Realty with buyers' />
-                <img id="mySlides" src={Living} alt='Living room with stairs and kitchen in background' />
-                <img id="mySlides" src={House} alt='Front of a two story house' />
-            {/* </div> */}
+            <div id='jumboContainer'>
+                <p>Start your search</p>
+                <img src={jumboImg} alt={jumboImgAlt} />
+            </div>
             
         </div>
     )
