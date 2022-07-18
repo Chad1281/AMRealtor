@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import Groove from '../../assets/images/jumbotron/groove.webp';
 import Sold from '../../assets/images/jumbotron/sold.webp';
@@ -11,6 +11,8 @@ import './Jumbotron.css'
 
 export default function Jumbotron() {
 
+    const [currentIndex, setCurrentIndex] = useState(0);
+
     const images = [Sold, Fireplace, Houses, Groove, Living, House];
     const imgAlts = [
         'Aaron holding sold sign with buyers',
@@ -21,16 +23,25 @@ export default function Jumbotron() {
         'Front of a two story house'
     ]
 
-    var i = 0;
+    let jumboImg = images[currentIndex];
+    let jumboImgAlt = imgAlts[currentIndex];
 
-    const jumboImg = images[i];
-    const jumboImgAlt = imgAlts[i];
+    useEffect(() => {
+        const interval = setInterval(changeIndex, 6000);
+        return () => clearInterval(interval);
+    }) 
+
+    function changeIndex() {
+        const isLastIndex = currentIndex === images.length - 1;
+        let newIndex = isLastIndex ? 0 : currentIndex + 1;
+        setCurrentIndex(newIndex);
+    }
 
     return(
         <div className='jumbotron'>
             <div id='jumboContainer'>
-                <p>Start your search</p>
-                <img src={jumboImg} alt={jumboImgAlt} />
+                <div id='side'>Start your search</div>
+                <img id='jumboImgs' src={jumboImg} alt={jumboImgAlt} />
             </div>
             
         </div>

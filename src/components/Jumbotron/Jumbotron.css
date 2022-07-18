@@ -7,18 +7,18 @@
     background-color: inherit;
 }
 
-.jumbotron div {
+#jumboContainer {
     display: flex;
     align-items: center;
     width: 70%;
-    background: #f2f2f2;
+    background: inherit;
     margin: 50px;
     padding: 0;
     box-shadow: 5px 10px 15px #00000052, 5px 10px 15px #0000003a;
     border-radius: 5px;
 }
 
-.jumbotron div p {
+#side {
     background: #f2f2f2;
     width: 20%;
     height: 100%;
