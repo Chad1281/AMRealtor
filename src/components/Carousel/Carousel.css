@@ -1,0 +1,17 @@
+.carousel {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 75%;
+    max-height: 0%;
+}
+
+.carousel img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    /* border-left: 2px solid black; */
+    border-radius: 0 5px 5px 0;
+    /* z-index: 1; */
+}
