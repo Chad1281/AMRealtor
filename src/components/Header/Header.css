@@ -6,7 +6,6 @@ header {
     width: 100%;
     background: #FFF5EA;
     box-shadow: 5px 10px 15px #00000049, 5px 10px 15px #0000003a;
-    /* box-shadow: 15px 30px 40px #00000049, 15px 30px 40px #0000003a; */
     padding: 25px 0 0 0;
     position: sticky;
     top: 0;
@@ -15,7 +14,6 @@ header {
 
 header a {
     display: flex;
-    /* width: 50vw; */
     text-decoration: none;
 }
 

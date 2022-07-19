@@ -23,8 +23,8 @@ export default function Carousel() {
         'Front of a two story house'
     ]
 
-    let jumboImg = images[currentIndex];
-    let jumboImgAlt = imgAlts[currentIndex];
+    let carouselImg = images[currentIndex];
+    let carouselImgAlt = imgAlts[currentIndex];
 
     useEffect(() => {
         const interval = setInterval(changeIndex, 6000);
@@ -39,7 +39,7 @@ export default function Carousel() {
 
     return(
         <div className='carousel'>
-            <img id='jumboImgs' src={jumboImg} alt={jumboImgAlt} />
+            <img className='carouselImgs' src={carouselImg} alt={carouselImgAlt} />
         </div>
     )
 }
