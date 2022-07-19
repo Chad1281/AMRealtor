@@ -1,23 +1,25 @@
 import React, { Suspense } from "react";
-import { BrowserRouter as Router, Redirect, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Header from "./components/Header/Header";
-import Jumbotron from "./components/Jumbotron/Jumbotron";
 import Links from "./components/Links/Links";
 import Background from "./components/Background/Background";
+import Home from './pages/Home/Home.js';
 
 import './App.css'
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <div>
         <Header />
         <Background />
         <Links />
-        <Jumbotron />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+        </Routes>
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 

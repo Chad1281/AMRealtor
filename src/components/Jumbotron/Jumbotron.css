@@ -10,14 +10,14 @@
 #jumboContainer {
     display: flex;
     align-items: center;
-    width: 70%;
+    width: 85%;
     background: inherit;
     margin: 50px;
     padding: 0;
     box-shadow: 5px 10px 15px #00000052, 5px 10px 15px #0000003a;
     border-radius: 5px;
-    background: ;
-    background-image: linear-gradient( #7C7575, #323232);
+    /* background: ; */
+    background-image: linear-gradient(to right, #323232, #212121);
 }
 
 #side {
